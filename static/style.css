@@ -1,0 +1,45 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 30;
+    display: flex;
+    flex-direction: column;
+    background: url('img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+header {
+    background: fixed;
+    padding: 15px;
+    text-align: left;
+}
+
+header nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: double;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

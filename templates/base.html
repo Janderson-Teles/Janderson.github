@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Meu Portfólio {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}">Início</a>
+            <a href="{{ url_for('sobre') }}">Sobre</a>
+            <a href="{{ url_for('projetos') }}">Projetos</a>
+            <a href="{{ url_for('contato') }}">Contato</a>
+
+        </nav>
+    </header>
+    <main class="{% block main_class %}{% endblock main_class %}">
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        <p>&copy; 2025 - Meu Portfólio </p>
+    </footer>
+</body>
+</html>
